@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <style>
+    h1 {
+      font-size: 22px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 500px;
+      padding: 20px;
+    }
+    input {
+      padding: 10px;
+      border: 1px solid lightgrey;
+      border-radius: 10px;
+      margin: 10px 0;
+    }
+    button {
+      margin: 10px 0;
+      background-color: blue;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <h1>User Form</h1>
+  <form action="/users" method="post">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name">
+    <label for="age">Age</label>
+    <input type="number" id="age" name="age">
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>

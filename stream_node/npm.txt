@@ -1,0 +1,12 @@
+npm install nodemon@latest // последняя версия lts
+npm install nodemon@next // последняя версия
+npm install update nodemon// последняя совместимая версия
+
+
+npm list -g // все пакеты которые глобально
+
+npm i --only=prod // только dev зависимости
+npm i --omit=dev
+
+npm  ci //clean install четко по package.lock.json тк package.json имеет приоритет перед 
+package.lock.json. Не используется для инсталяции отдельных пакетов
