@@ -1,0 +1,18 @@
+Занят порт:
+в powershell=>
+
+taskkill /f /im node.exe
+
+/f - force ended
+
+/im - Specifies the image name of the process to be terminated.
+
+node.exe - executable file
+
+или попробовать
+"scripts": {
+    "stop-win": "Taskkill /IM node.exe /F",
+    "stop-linux": "killall node"
+},
+
+================================

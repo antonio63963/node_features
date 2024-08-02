@@ -1,15 +1,10 @@
-const express = require('express');
+const express = require("express");
 
-const some = require('./service')
+const appRouter = require("./routes");
 
 const app = express();
 const PORT = 5000;
 
-app.get('/', (req, res) => {
-  res.send('Express...')
-})
+app.use(appRouter);
 
-
-app.listen(PORT, () => console.log(`Server started on port ${PORT}`))
-
-console.log('Appp ', process.cwd()) // current dir cwd
+app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
